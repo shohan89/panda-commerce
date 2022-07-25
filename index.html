@@ -11,7 +11,7 @@
   <body>
     <!-- Header Section Start  -->
     <header>
-      <nav class="navbar navbar-expand-lg bg-light">
+      <nav class="navbar navbar-expand-lg bg-light fixed-top shadow-lg">
         <div class="container">
           <a class="navbar-brand" href="#">
             <img src="images/logo.png" alt="logo">
@@ -19,19 +19,19 @@
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse d-flex text-align-center" id="navbarNav">
-            <ul class="navbar-nav ">
+          <div class="collapse navbar-collapse d-flex text-align-center justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active fw-bold text-success" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Shoes</a>
+                <a class="nav-link fw-bold" href="#shoes">Shoes</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Bagpack</a>
+                <a class="nav-link fw-bold" href="#backpack">Backpack</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Subscribe</a>
+                <a class="nav-link fw-bold" href="#subscribe">Subscribe</a>
               </li>
             </ul>
           </div>
@@ -44,9 +44,9 @@
             <div class="row">
               <div class="col-lg-7 d-flex align-items-center ps-5">
                 <div class="sliderContent p-5">
-                  <h2>Cool Dude Headphone</h2>
-                  <p>This is the best headphone in the world for people who just want to waste time in front of funky world.</p>
-                  <h1>$420</h1>
+                  <h2 class="text-light">Cool Dude Headphone</h2>
+                  <p class="text-light">This is the best headphone in the world for people who just want to waste time in front of funky world.</p>
+                  <h1 class="text-light">$420</h1>
                   <a class="btn btn-light" href="#">Buy Now</a>
                 </div>
               </div>
@@ -59,9 +59,9 @@
             <div class="row">
               <div class="col-lg-7 d-flex align-items-center ps-5">
                 <div class="sliderContent p-5">
-                  <h2>Mega LCD TV For Sports</h2>
-                  <p>This is the best tv in the world for people who just want to waste time in front of tv.</p>
-                  <h1>$1420</h1>
+                  <h2 class="text-light">Mega LCD TV For Sports</h2>
+                  <p class="text-light">This is the best tv in the world for people who just want to waste time in front of tv.</p>
+                  <h1 class="text-light">$1420</h1>
                   <a class="btn btn-light" href="#">Buy Now</a>
                 </div>
               </div>
@@ -70,13 +70,13 @@
               </div>
             </div>
           </div>
-          <div class="carousel-item bg-danger border rounded-3 p-3">
+          <div class="carousel-item bg-primary border rounded-3 p-3">
             <div class="row">
               <div class="col-lg-7 d-flex align-items-center ps-5">
                 <div class="sliderContent p-5">
-                  <h2>X-Box for your living room</h2>
-                  <p>This is the best headphone in the world for people who just want to waste time in front of funky world.</p>
-                  <h1>$620</h1>
+                  <h2 class="text-light">X-Box for your living room</h2>
+                  <p class="text-light">This is the best headphone in the world for people who just want to waste time in front of funky world.</p>
+                  <h1 class="text-light">$620</h1>
                   <a class="btn btn-light" href="#">Buy Now</a>
                 </div>
               </div>
@@ -128,7 +128,7 @@
       </section>
       <!-- Category Section End  -->
       <!-- Shoes Section Start  -->
-      <section class="container my-5">
+      <section id="shoes" class="container my-5">
         <h2>Shoes</h2>
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
           <div class="col">
@@ -174,7 +174,7 @@
       </section>
       <!-- Shoes Section End  -->
       <!-- Backpacks Section Start -->
-      <section class="container my-5">
+      <section id="backpack" class="container my-5">
         <h2>Backpacks</h2>
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
           <div class="col">
@@ -219,9 +219,27 @@
         </div>
       </section>
       <!-- Backpacks Section End -->
-
+      <!-- Subscribe Section Start  -->
+      <section id="subscribe" style="height: 30vh;" class="container d-flex justify-content-center align-items-center bg-info rounded-3">
+        <div class="formContent">
+          <h5 class="text-light fw-bold">LET'S STAY IN TOUCH</h5>
+          <p class="text-light">Get updates on sales, specials and more</p>
+          <form>
+            <div class="mb-3">
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Please Enter Your Email">
+            </div>
+            <button type="submit" class="btn btn-light">Submit</button>
+          </form>
+        </div>
+      </section>
+      <!-- Subscribe Section End  -->
     </main>
     <!-- Main End  -->
+    <!-- Footer Start  -->
+    <footer class="text-center mt-5">
+      <p><a class="text-decoration-none text-dark" href="#">©2022. Panda Commerce. All rights reserved. Shohan, Bangladesh.</a></p>
+    </footer>
+    <!-- Footer End  -->
 
 
 
